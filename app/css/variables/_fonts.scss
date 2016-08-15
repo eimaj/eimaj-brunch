@@ -9,34 +9,34 @@
 $sans: 'Lato', 'Helvetica Neue', Helvetica, serif;
 
 //* Mixins: *//
-@mixin sansN4 {
+@mixin sans-n4 {
   font-family: $sans;
   font-weight: 400;
 }
 
-@mixin sansI4 {
+@mixin sans-i4 {
   font-family: $sans;
   font-weight: 400;
   font-style: italic;
 }
 
-@mixin sansN3 {
+@mixin sans-n3 {
   font-family: $sans;
   font-weight: 300;
 }
 
-@mixin sansI3 {
+@mixin sans-i3 {
   font-family: $sans;
   font-weight: 300;
   font-style: italic;
 }
 
-@mixin sansN7 {
+@mixin sans-n7 {
   font-family: $sans;
   font-weight: 700;
 }
 
-@mixin sansI7 {
+@mixin sans-i7 {
   font-family: $sans;
   font-weight: 700;
   font-style: italic;
@@ -53,20 +53,20 @@ $sans: 'Lato', 'Helvetica Neue', Helvetica, serif;
 /* Example mixin use/class helpers: */
 /* ------------------------------------ */
 .h-sans--N3 {
-  @include sansN3;
+  @include sans-n3;
 }
 .h-sans--I3 {
-  @include sansI3;
+  @include sans-i3;
 }
 .h-sans--N4 {
-  @include sansN4;
+  @include sans-n4;
 }
 .h-sans--I4 {
-  @include sansI4;
+  @include sans-i4;
 }
 .h-sans--N7 {
-  @include sansN7;
+  @include sans-n7;
 }
 .h-sans--I7 {
-  @include sansI7;
+  @include sans-i7;
 }

@@ -10,11 +10,8 @@
 
 .l-content--box {
   background-color: $white;
-  padding: ($gutter * 3.5) $gutter 0;
+  padding: ($gutter * 3) $gutter 0;
   text-align: center;
-  @media (min-width: 400px) {
-    padding: ($gutter * 3.5) $gutter 0;
-  }
 }
 
 .l-content--cv {

@@ -1,13 +1,13 @@
 //* Default Text Styles *//
-html, body {
-  @include sansN3;
+html,
+body {
+  @include sans-n3;
   @include font(20, 30);
   font-size: 20px; // required for rem
 }
 
 //* Links *//
 a {
-  // @include transition(all .4s ease 0s);
   text-decoration: none;
   color: $blue;
 
@@ -18,51 +18,73 @@ a {
 }
 
 //* Default typography *//
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0 0 $gutter/2;
-  @include sansN3;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  @include sans-n3;
+  margin-top: 0;
 }
 
 h1 {
-  @include font(28, 50, .6px);
+  @media (min-width: 480px) {
+    @include font(28, 50, .6px);
+  }
+
+  @include font(24, 30, .6px);
+  margin-botttom: $gutter;
 }
 
 h2 {
-  @include font(20, 36, .6px);
+  @media (min-width: 480px) {
+    @include font(22, 32, .6px);
+  }
+
+  @include font(18, 24, .6px);
   padding-bottom: 6px;
+  margin: 0 0 $gutter;
   border-bottom: 2px solid $smoke;
 }
 
 h3 {
-  @include font(20, 24);
+  @media (min-width: 480px) {
+    @include font(20, 24);
+  }
+
+  @include font(16, 18, .6px);
+  margin: 0 0 $gutter / 2;
 }
 
 // h4 {
-//   // @include breakPoint-md {
-//   //   @include font(30, 36);
-//   //   @include font(num(5), num(6));
-//   // }
-//   @include font(20, 25);
-//   @include sansN3;
-// }
-//
-// h5 {
-//   @include sansN3;
-//   @include font(18, 20);
-// }
-//
-// h6 {
-//   @include sansN7;
-//   @include font(10, 18, 1px);
-//   text-transform: uppercase;
 // }
 
-p {
-  @media (min-width: 400px) {
+// h5 {
+// }
+
+// h6 {
+// }
+
+p,
+li {
+  @media (min-width: 480px) {
     @include font(16, 24, .6px);
   }
-  @include font(16, 20, .6px);
-  @include sansN3;
+
+  @include font(14, 20, .6px);
+  margin: 0 0 $gutter / 2;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0 ($gutter * 1.5);
+  padding: 0;
 }
 
 blockquote {
@@ -75,6 +97,7 @@ blockquote {
   color: darken($grey, 30%);
   font-family: 'Consolas', 'Courier New';
   font-weight: 400;
+
   p {
     @include font-size(16);
     margin: 0;
@@ -88,13 +111,13 @@ small {
 }
 
 strong {
-  @include sansN7;
+  @include sans-n7;
 }
 
 em {
-  @include sansI4;
+  @include sans-i3;
 }
 
-.bordered:after {
+.bordered::after {
   border-bottom: 1px solid $blue;
 }
