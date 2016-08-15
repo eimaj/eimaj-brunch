@@ -1,0 +1,28 @@
+.c-avatar {
+  @media (min-width: 400px) {
+    width: ($gutter * 6);
+    height: ($gutter * 6);
+  }
+
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border: ($gutter / 4) solid $blue;
+  border-radius: 50%;
+  padding: 0;
+  width: ($gutter * 5);
+  height: ($gutter * 5);
+  overflow: hidden;
+
+  &:hover {
+    border-color: darken($blue, 10%);
+  }
+}
+
+.c-avatar__img {
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}

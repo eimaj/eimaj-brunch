@@ -1,0 +1,72 @@
+// Web fonts are increasingly coupled with font-styles and weights.
+// This format will help clean up stylesheets by defining each possibility once
+// and creating mixins and class helpers to help clean up stylesheets.
+
+//* Import font(s): *//
+@import 'http://fonts.googleapis.com/css?family=Lato:300,400,700';
+
+//* Font variable(s): *//
+$sans: 'Lato', 'Helvetica Neue', Helvetica, serif;
+
+//* Mixins: *//
+@mixin sansN4 {
+  font-family: $sans;
+  font-weight: 400;
+}
+
+@mixin sansI4 {
+  font-family: $sans;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin sansN3 {
+  font-family: $sans;
+  font-weight: 300;
+}
+
+@mixin sansI3 {
+  font-family: $sans;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@mixin sansN7 {
+  font-family: $sans;
+  font-weight: 700;
+}
+
+@mixin sansI7 {
+  font-family: $sans;
+  font-weight: 700;
+  font-style: italic;
+}
+
+// Mixin explanation:
+// The suffix defines the weight and style:
+// font-<font-name><font-style><font-weight>
+//    N == normal
+//    I == italic
+//    4 == normal font-weight (400)
+//    6 == semi-bold font-weight (600)
+
+/* Example mixin use/class helpers: */
+/* ------------------------------------ */
+.h-sans--N3 {
+  @include sansN3;
+}
+.h-sans--I3 {
+  @include sansI3;
+}
+.h-sans--N4 {
+  @include sansN4;
+}
+.h-sans--I4 {
+  @include sansI4;
+}
+.h-sans--N7 {
+  @include sansN7;
+}
+.h-sans--I7 {
+  @include sansI7;
+}

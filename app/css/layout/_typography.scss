@@ -1,0 +1,100 @@
+//* Default Text Styles *//
+html, body {
+  @include sansN3;
+  @include font(20, 30);
+  font-size: 20px; // required for rem
+}
+
+//* Links *//
+a {
+  // @include transition(all .4s ease 0s);
+  text-decoration: none;
+  color: $blue;
+
+  &:hover {
+    text-decoration: underline;
+    color: darken($blue, 10%);
+  }
+}
+
+//* Default typography *//
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0 0 $gutter/2;
+  @include sansN3;
+}
+
+h1 {
+  @include font(28, 50, .6px);
+}
+
+h2 {
+  @include font(20, 36, .6px);
+  padding-bottom: 6px;
+  border-bottom: 2px solid $smoke;
+}
+
+h3 {
+  @include font(20, 24);
+}
+
+// h4 {
+//   // @include breakPoint-md {
+//   //   @include font(30, 36);
+//   //   @include font(num(5), num(6));
+//   // }
+//   @include font(20, 25);
+//   @include sansN3;
+// }
+//
+// h5 {
+//   @include sansN3;
+//   @include font(18, 20);
+// }
+//
+// h6 {
+//   @include sansN7;
+//   @include font(10, 18, 1px);
+//   text-transform: uppercase;
+// }
+
+p {
+  @media (min-width: 400px) {
+    @include font(16, 24, .6px);
+  }
+  @include font(16, 20, .6px);
+  @include sansN3;
+}
+
+blockquote {
+  @include font-size(16);
+  margin: 0 0 $gutter;
+  border: 1px solid $grey;
+  border-left: 2px solid $blue;
+  background-color: $smoke;
+  padding: $gutter;
+  color: darken($grey, 30%);
+  font-family: 'Consolas', 'Courier New';
+  font-weight: 400;
+  p {
+    @include font-size(16);
+    margin: 0;
+    padding: 0;
+    font-family: 'Consolas', 'Courier New';
+  }
+}
+
+small {
+  font-size: 80%;
+}
+
+strong {
+  @include sansN7;
+}
+
+em {
+  @include sansI4;
+}
+
+.bordered:after {
+  border-bottom: 1px solid $blue;
+}

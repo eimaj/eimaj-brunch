@@ -1,0 +1,68 @@
+.c-icons {
+  display: block;
+  margin: 0;
+  padding: ($gutter * 1.5) 0 0;
+  list-style: none;
+  text-align: center;
+}
+
+.l-content--cv .c-icons {
+  padding: 0 0 ($gutter * 1.5);
+}
+
+.c-icons__item {
+  display: inline-block;
+  margin: 0 ($gutter / 3);
+}
+
+.c-icon {
+  display: block;
+  border-radius: 50%;
+  width: ($gutter * 1.5);
+  height: ($gutter * 1.5);
+  text-align: center;
+  line-height: ($gutter * 1.5);
+  color: $white;
+  font-size: $gutter;
+  @media (min-width: 400px) {
+    width: ($gutter * 2);
+    height: ($gutter * 2);
+    line-height: ($gutter * 2);
+  }
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.c-icon--twitter {
+  background-color: $twitter-color;
+
+  &:hover {
+    background-color: lighten($twitter-color, 10%);
+  }
+}
+
+.c-icon--github {
+  background-color: $github-color;
+
+  &:hover {
+    background-color: lighten($github-color, 10%);
+  }
+}
+
+.c-icon--linkedin {
+  background-color: $linkedin-color;
+
+  &:hover {
+    background-color: lighten($linkedin-color, 10%);
+  }
+}
+
+.c-icon--instagram {
+  background-color: $instagram-color;
+
+  &:hover {
+    background-color: lighten($instagram-color, 10%);
+  }
+}
