@@ -1,14 +1,14 @@
-div.l-content.l-content--box.l-content--cv
+div.l-content.l-content--box.l-content--wide
   h1 Jamie Allen
   
   include ./_icons.jade
 
-  div.cv-row
+  div.l-row
     h2 Professional Summary
 
     p I thrive in a creative environment. Working closely with designers, developers and clients I strive to make every project as accessible and intuitive as possible for the end user.  My main focus is front end development and design but I'm also interested APIs, the design process and web servers.    
 
-  div.cv-row
+  div.l-row
     h2 Qualifications
 
     ul
@@ -19,7 +19,7 @@ div.l-content.l-content--box.l-content--cv
       li Sketch, Invision, Photoshop, Illustrator
       li Ubuntu servers, Nginx, Digital Ocean, Heroku
 
-  div.cv-row
+  div.l-row
     h2 Experience
 
     p
@@ -31,17 +31,21 @@ div.l-content.l-content--box.l-content--cv
 
     ul
       li
-        a(target="_blank" href="https://www.msumcmaster.ca").
+        a(target='_blank' href="https://www.msumcmaster.ca").
           McMaster Student Union
+        i.c-new-tab.ion.ion-android-open
       li
-        a(target="_blank" href="http://expressingvibrancy.ca").
+        a(target='_blank' href="http://expressingvibrancy.ca").
           Expressing Vibrancy Research Project
+        i.c-new-tab.ion.ion-android-open
       li
-        a(target="_blank" href="https://lauratedesco.com").
+        a(target='_blank' href="https://lauratedesco.com").
           Laura Tedesco Jewellery Design
+        i.c-new-tab.ion.ion-android-open
       li
-        a(target="_blank" href="http://bruxhouse.com").
+        a(target='_blank' href="http://bruxhouse.com").
           Brux House Restaurant
+        i.c-new-tab.ion.ion-android-open
         
     br
     
@@ -52,7 +56,7 @@ div.l-content.l-content--box.l-content--cv
 
     p In house web project development, programming and design.
 
-  div.cv-row
+  div.l-row
     h2 Education
 
     p 
@@ -64,13 +68,19 @@ div.l-content.l-content--box.l-content--cv
       br
       em George Brown College, 2008
       
-  div.cv-row
+  div.l-row
     h2 Interests
     
     p In the last year I was an organizer for the Embrace UX conference in Hamilton, I've mentored for Ladies Learning Code in Hamilton and I have volunteered for local political issues like public transit and various elections.
     
-    p Currently most of my spare time is been spent with my family. I also enjoy painting, strumming guitars, gardening and sailing when I can find the time. 
+    p Currently most of my spare time is been spent with my family. I also enjoy 
+      a(target='_blank' href='https://society6.com/eimaj').
+        painting
+      i.c-new-tab.ion.ion-android-open , 
+      a(target='' href='/pixels.html').
+        pixel design, 
+      span strumming guitars, gardening and sailing when I can find the time. 
 
     br
     
-    img.c-img(src='./images/jammin.jpg')
+    img.c-img.c-img--bordered(src='./images/jammin.jpg')

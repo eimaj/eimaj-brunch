@@ -14,12 +14,12 @@
   text-align: center;
 }
 
-.l-content--cv {
+.l-content--wide {
   min-width: 280px;
   max-width: 801px;
 }
 
-.cv-row {
+.l-row {
   padding: ($gutter / 2) $gutter;
   text-align: left;
 }
@@ -32,15 +32,19 @@
 
 .c-foot {
   @media (min-width: 400px) {
-    padding: ($gutter * 1.5) 0 ($gutter * 2);
+    padding: 0 0 ($gutter * 2);
   }
 
-  padding: ($gutter * 1.5) 0 ($gutter * 1.5);
+  padding: 0 0 ($gutter * 1.5);
   text-transform: uppercase;
   letter-spacing: 1.1px;
   font-size: 10px;
   position: relative;
   opacity: .8;
+}
+
+.spacer {
+  padding-top: $gutter * 1.5;
 
   &:before {
     position: relative;

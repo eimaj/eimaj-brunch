@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.l-content--cv .c-icons {
+.l-content--wide .c-icons {
   padding: 0 0 ($gutter * 1.5);
 }
 
@@ -24,6 +24,7 @@
   line-height: ($gutter * 1.5);
   color: $white;
   font-size: $gutter;
+
   @media (min-width: 400px) {
     width: ($gutter * 2);
     height: ($gutter * 2);
@@ -33,6 +34,12 @@
   &:hover {
     color: $white;
   }
+}
+
+.c-new-tab {
+  @include font-size(12);
+  margin: 0 $gutter/4;
+
 }
 
 .c-icon--twitter {
@@ -64,5 +71,13 @@
 
   &:hover {
     background-color: lighten($instagram-color, 10%);
+  }
+}
+
+.c-icon--email {
+  background-color: $email-color;
+
+  &:hover {
+    background-color: lighten($email-color, 10%);
   }
 }

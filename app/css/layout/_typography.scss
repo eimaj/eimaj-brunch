@@ -51,10 +51,10 @@ h2 {
 
 h3 {
   @media (min-width: 480px) {
-    @include font(20, 24);
+    @include font(20, 26);
   }
 
-  @include font(16, 18, .6px);
+  @include font(16, 20, .6px);
   margin: 0 0 $gutter / 2;
 }
 
