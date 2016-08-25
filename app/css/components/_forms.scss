@@ -13,6 +13,7 @@ input[type='text'] {
   padding-top: $gutter;
   width: 100%;
   height: auto;
+  h
 
   &.text-area {
     height: auto;
@@ -84,4 +85,9 @@ label {
 
 .center {
   text-align: center;
+}
+
+#mc-embedded-subscribe-form {
+  margin: 0 auto;
+  max-width: 500px;
 }
