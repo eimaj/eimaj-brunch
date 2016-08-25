@@ -2,11 +2,11 @@
 
 ## Professional Summary
 
-I thrive in a creative environment. Working closely with designers, developers and clients I strive to make every project as accessible and intuitive as possible for the end user.  My main focus is front end development and design but I'm also interested APIs, the design process and web servers.    
+I thrive in a creative environment. Working closely with designers, developers and clients I strive to make every project as accessible and intuitive as possible for the end user. My main focus is front end development and design but I also have an interest in APIs, processes and web servers.
 
 ## Qualifications
 
-* CSS3 (Sass, SCSS)
+* CSS3 (Sass, SCSS, BEM)
 * Javascript (Coffeescript, ES6, jQuery)
 * Ruby on Rails
 * Node.js, React.js and Ember
@@ -36,13 +36,13 @@ In house web project development, programming and design.
 
 ### Bachelor of Arts Honours degree in Fine Art
 
-_University of Guelph, 2005_
-
-### Design Management Diploma
-
 _George Brown College, 2008_
 
 ## Interests
+
+_University of Guelph, 2005_
+
+### Design Management Diploma
 
 In the last year I was an organizer for the Embrace UX conference in Hamilton, I've mentored for Ladies Learning Code in Hamilton and I have volunteered for local political issues like public transit and various elections.
 
