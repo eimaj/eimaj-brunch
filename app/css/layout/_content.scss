@@ -31,27 +31,28 @@
 }
 
 .c-foot {
-  @media (min-width: 400px) {
-    padding: 0 0 ($gutter * 2);
-  }
-
+  position: relative;
+  opacity: .8;
   padding: 0 0 ($gutter * 1.5);
   text-transform: uppercase;
   letter-spacing: 1.1px;
   font-size: 10px;
-  position: relative;
-  opacity: .8;
+  @media (min-width: 400px) {
+    padding: 0 0 ($gutter * 2);
+  }
 }
 
 .spacer {
-  padding-top: $gutter * 1.5;
-
   &:before {
-    position: relative;
-    width: 30px;
     display: block;
-    border-top: 1px dashed $grey;
+    position: relative;
     margin: 0 auto ($gutter * 1.5);
+    border-top: 1px dashed $grey;
+    width: 30px;
     content: '';
   }
+}
+
+.spacer--padded {
+  padding-top: $gutter * 1.5;
 }

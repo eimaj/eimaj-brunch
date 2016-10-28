@@ -1,8 +1,8 @@
 .c-img {
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 100%;
   margin: 0 0 $gutter;
+  max-width: 100%;
 }
 
 .c-img--bordered {
@@ -10,9 +10,27 @@
 }
 
 .c-img--preview {
+  width: 100%;
   @media (min-width: 540px) {
     width: 50%;
   }
+}
 
-  width: 100%;
+.c-img--portfolio-sm,
+.c-img--portfolio-lg {
+  display: block;
+  border: 1px solid $lt-grey;
+  margin: 0 auto;
+}
+
+.c-img--portfolio-sm {
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+.c-img--portfolio-lg {
+  @media (max-width: 768px) {
+    display: none;
+  }
 }

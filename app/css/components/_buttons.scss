@@ -1,0 +1,23 @@
+.c-button {
+  @include font(10, 30, 2px);
+  display: inline-block;
+  position: relative;
+  transition: all .2s ease-in-out 0s;
+  box-sizing: border-box;
+  border: 0;
+  background-color: $blue;
+  padding: 0 $gutter;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  font-weight: 600;
+}
+
+.c-button:hover {
+  background-color: darken($blue, 12%);
+  text-decoration: none;
+  color: white;
+}
